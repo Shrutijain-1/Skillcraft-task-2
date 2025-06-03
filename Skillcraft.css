@@ -1,0 +1,71 @@
+:root {
+    --primary: #1e1b4b;      /* Dark Violet */
+    --accent: #81d468;       /* Neon Green */
+    --bg: #0f172a;           /* Deep Navy */
+    --font: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    font-family: var(--font);
+    background: var(--bg);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .container {
+    background: #1e293b;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+  }
+  
+  h1 {
+    margin-bottom: 1rem;
+    color: var(--accent);
+  }
+  
+  .time-display {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+    color: white;
+  }
+  
+  .buttons button {
+    padding: 0.6rem 1rem;
+    margin: 0.3rem;
+    border: none;
+    border-radius: 0.5rem;
+    background: var(--accent);
+    color: var(--primary);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  .buttons button:hover {
+    background: #059669;
+    transform: scale(1.05);
+  }
+  
+  .lap-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+    max-height: 200px;
+    overflow-y: auto;
+    text-align: left;
+    color: #e0f2fe;
+  }
+  
+  .lap-list li {
+    padding: 0.5rem;
+    border-bottom: 1px solid #334155;
+    font-size: 0.9rem;
+  }
